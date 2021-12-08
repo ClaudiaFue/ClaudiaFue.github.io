@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: pink;
+            }
+            h1{
+                background-color: red;
+            }
+            h2{
+                background-color: red;
+            }
+            h3{
+                background-color: red;
+            }
+            #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #dd95c1;
+  color: white;
+}
+        </style>
+    </head>
+<h1>Books Read</h1>
+<table id="customers">
+    <tr>
+        <th>Authors</th>
+        <th>Book Name/Series</th>
+        <th>Rating</th>
+    </tr>
+    <tr>
+        <td>Rick Riordan</td>
+        <td>Heroes of Olympus</td>
+        <td>9/10</td>
+    </tr>
+    <tr>
+        <td>Kelly Armstrong</td>
+        <td>The Summoning Series</td>
+        <td>10/10</td>
+    </tr>
+    <tr>
+        <td>J.K Rowling</td>
+        <td>Harry Potter Series</td>
+        <td>7/10</td>
+    </tr>
+    </table>
+
+ 
+  <body>
+  <h1>Interests</h1>
+  <p>This will be mostly talkinbg about my interests</p>
+  <h2>Books</h2>
+    <p> I really love to read books, mostly about fictional stories and adventures. Never really was interested in the romance novels to be honest. I have read many books over the years but there are some that stuck with me more then others.</p>
+    <p>Here are some of the authors that created some of my favorite books:</p>
+    <ul>
+        <li>Rick Riordan</li>
+        <li>J.K Rowling</li>
+        <li>Kelly Armstrong</li>
+        <li>ETC...</li>
+    </ul>
+    <h2><b>Specific Books</b></h2>
+    <p> The Specific books that I like to read from these authors are:</p>
+  <ul>
+      <li><a href=https://www.kelleyarmstrong.com/book/the-summoning/>The Summoning Series</a></li>
+      <li><a href=https://rickriordan.com/series/kane-chronicles/>The Kane Chronicles</a></li>
+      <li><a href=https://en.wikipedia.org/wiki/The_Heroes_of_Olympus>Heroes of Olympus</a></li>
+      <li><a href=https://en.wikipedia.org/wiki/Harry_Potter>Harry Potter</a></li>
+  </ul>
+  <p>There are some other books that I have read that also interested me, but these books are what I perceive as my favorites during my time reading them.</p>
+  <h2><b>Video Games</b></h2>
+  <p>I love to play video games as well especially roleplaying games or games of survival as well.</p>
+  <p> Normally I would actually play these games on my tablet and not on my computer or phone because, the computer only has limited storage and the phone may end up lose memory storage as well.</p>
+  <p>the tablet may need storage as well but its not used for important stuff as the phone and computer so it doesn't really matter what games it has.</p>
+  <h3><b>These Games are:</b></h3>
+  <ul>
+      <li><a href=https://cdn1.epicgames.com/salesEvent/salesEvent/18BR_S18_Launcher_EGS_Blade_2560x1440_2560x1440-da6f6a137b90887357222b762c7675a1?h=270&resize=1&w=480>Fortnite</a></li>
+      <li><a href=https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S1_2560x1440-91c6cd7312cc2647c3ebccca10f30399>Genshin Impact</a></li>
+      <li><a href=https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg>PubG</a></li>
+      <li><a href=https://play-lh.googleusercontent.com/e5YrwWQOcF-TGUF7rLKGoq4cd4o94W4JBPXrRTsvgnVCCl8RhAH8YDMZwDDkzbDgxBk>Monster Legends</a></li>
+      <li><a href=https://static.tvtropes.org/pmwiki/pub/images/dragon_city_logo.png>Dragon City</a></li>
+      </ul>
+<h1><b>Explanation</b></h1>
+      <p>The Names here are linked to the logos of those games to show what they look like and see if you are interested in playing those games. Fortnite can not be played on IOS due to a problem with the company Apple against the creators company Epic Games. The rest of the games can be played on both platforms of IOS and Android. Fortnite, PubG and Genshin Impact can also be played on laptops or computers if you want to play on them there.</p>
+
+<h1><b>Code Projects</b></h1>
+<p>This is what actually got me into coding because I actually always wanted to know how certain elements of the game work behind the scenes of the 3D or 2D characters.</p>
+<p>Like this code here, it allows to insert any amount of numbers and automatically creates a new file:
+    import random</p>
+
+    <p>def generateRandomNumber(min_num,max_num):</p>
+    <p>randomNumber = random.randint(min_num,max_num)</p>
+    <p>return randomNumber</p>
+<p>def main():</p>
+    <p>while True:</p>
+       <p>try:</p>
+            <p>numberOfRandomNumbers = int(input("How many numbers" + \
+                                      " should the file hold?: "))</p>
+            <p>min_num = float(input("What is the Minimum number? "))</p>
+            <p>max_num = float(input("What is the Maximum number? "))</p>
+            <p>fileToBeWritten = open("randomNumbers.txt","w")</p>
+            <p>if (numberOfRandomNumbers < 0):</p>
+               <p>print("Positive integers only")</p>
+                <p>break </p>
+        <p>except Exception as error:</p>
+           <p>print("There was an error", error)</p>
+        <p>else:</p>
+           <p>for randomNumberCount in range(1, numberOfRandomNumbers + 1):</p>
+              <p>randomNumber = generateRandomNumber(min_num,max_num)</p> 
+               <p>fileToBeWritten.write(str(randomNumber)+ "\n")</p>
+        <p>print(numberOfRandomNumbers,  "numbers have been written in the file.")</p>
+        <p>break</p>
+<p>main()</p>
+</body>
+ </html>

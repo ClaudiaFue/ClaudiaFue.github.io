@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: green;
+            }
+            body{
+                color: whitesmoke;
+            }
+            h1{
+                background-color: greenyellow;
+                color: black;
+            }
+            h2{
+                background-color: greenyellow;
+                color: black;
+            }
+            h3{
+                background-color: greenyellow;
+                color: black;
+            }
+        </style>
+    </head>
+ 
+  <body>
+  <h1>Work Stuff</h1>
+  <h2>This is to tell about any experience in work that I have</h2>
+    <p> I never really worked on a <i>real job</i> before.  </p>
+    <p>I am mainly focusing on studying in college for now before actually thinking about going to work.</p>
+    <h3>My Past</h3>
+    <p>But growing up I did do things that seem like manual jobs like:</p>
+    <ul>
+        <li>Moving Blocks</li>
+        <li>Picking up Trash</li>
+        <li>Cleaning any remaining trash</li>
+        <li>and some other things as well</li>
+    </ul>
+    <p>This was actually just helping out my dad who is a <a href=https://www.masonrymagazine.com/wp-content/uploads/2017/08/shutterstock_220694557.jpg.jpeg>masonry worker</a>and is recently started his own company as well.</p>
+    <p>My mom works in a factory that creates parts for something. I do not know what parts specifically but I think it was car parts or something small like nails or screws.</p>
+    <h2><b>Sibilings</b></h2>
+    <p> My little sister is actually hoping to go to the an <a href= https://kcai.edu>Art Instition</a> because she is pursuing a bachelors degree on
+    <a href= https://i.ytimg.com/vi/ejNIow5DPUM/maxresdefault.jpg>photography</a></p>
+    <p> My older sister is actually married and with a 1 year old child named Isabella. The name is from her mother-in-law who is currently living with them to help take care of the child. She is working in a Costco but wants to continue studying in business.</p>
+  
+<h1><b>Code Projects</b></h1>
+<p>This is a code that was created to see how many numbers are in a file and estimate the following:</p>
+<ul>
+    <li>Mean</li>
+    <li>Median</li>
+    <li>Average</li>
+    <li>Range</li>
+    <li>Maximum</li>
+    <li>Minimum</li>
+</ul>
+<p>def main():</p>
+    <p>try:</p>
+        <p>filename = input("Enter the File Name: ")</p>
+        <p>f=open(filename)</p>
+        <p>c=0</p>
+        <p>maxi=(sys.maxsize)</p>
+        <p>mini=(sys.maxsize)</p>
+        <p>total=0</p>
+        <p>avg=0.0</p>
+        <p>for line in f:</p>
+            <p>i=int(line.strip())</p>
+            <p>c+=1</p>
+           <p>total+=i</p>
+        <p>if i> maxi:</p>
+           <p>maxi=i</p>
+        <p>if i < mini:</p>
+            <p>mini=i</p>
+       <p>print("FileName: ",filename)</p>
+       <p>print("Sum: ",total)</p>
+        <p>print("count: ",c)</p>
+        <p>print("Average: ",avg)</p>
+        <p>print("Max: ",maxi)</p>
+        <p>print("Min: ",mini)</p>
+        <p>print("Range: ",(maxi-mini))</p>
+        <p>f.close()</p>
+    <p>except:</p>
+       <p>print('File Not Found')</p>
+<p>choice=input('Would you like to evaluate another file? (Y/N)')</p>
+<p>choice=choice.lower()</p>
+<p>if (choice !='Y'):</p>
+    <p>do_filename = False</p>
+<p>main()</p>
+
+</body>
+ </html>
